@@ -1,0 +1,3 @@
+{
+  programs.keychain.enable = true;
+}

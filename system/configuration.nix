@@ -109,8 +109,11 @@
     viAlias = true;
   };
 
+  programs.ssh.startAgent = true;
+
   nix = {
     settings = {
+      warn-dirty = false;
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
     };

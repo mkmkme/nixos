@@ -20,14 +20,4 @@ in {
     ];
 
   };
-
-  programs.ssh = {
-    enable = true;
-    extraConfig = ''
-Host *
-	IdentitiesOnly=yes
-	IdentityAgent ~/.1password/agent.sock
-    '';
-  };
-
 }
