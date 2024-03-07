@@ -74,6 +74,7 @@
     packages = with pkgs; [
       brave
     ];
+    shell = pkgs.fish;
   };
 
   # Allow unfree packages
@@ -110,6 +111,8 @@
   };
 
   programs.ssh.startAgent = true;
+
+  programs.fish.enable = true;
 
   nix = {
     settings = {

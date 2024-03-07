@@ -1,10 +1,10 @@
 {
   imports = [
+    ./fish
     ./gh
     ./git
     ./gpg
     ./keychain
-    # ./ssh
     ./vscode
   ];
 }
